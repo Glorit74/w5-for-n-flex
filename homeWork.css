@@ -1,0 +1,20 @@
+#root {
+
+    border: 1px solid black;
+
+}
+
+.card {
+ 
+    width: -webkit-fit-content;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(243,226,220,1) 0%, rgba(243,226,220,1) 48%, rgba(217,170,105,1) 52%, rgba(217,170,105,1) 100%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    margin: 10px;
+    padding-right: 5px;
+    
+
+    border-radius: 20px 0;
+    box-shadow: 2px 2px 5px black;
+}

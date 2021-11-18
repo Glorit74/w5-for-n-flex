@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -39,4 +39,14 @@ button, input, textarea, select {
     appearance: none !important;
     -webkit-appearance: none !important;
     border-radius: 0
+} */
+
+#root {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    /* height: 100vh; */
+    justify-content: center;
+    
+
 }
