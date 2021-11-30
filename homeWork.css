@@ -1,113 +1,156 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-  
-    background: transparent;
-  
-    font-family: inherit;
-    
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
 }
-  
-ol, ul, li {
-    list-style:none;
-    display:block;
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
 }
-  
+
 table {
-    border-collapse:collapse;
-    border-spacing:0
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-  
+
 a img {
-    border: none
+  border: none;
 }
-  
-button, a {
-    cursor: pointer;
-    color: inherit
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
 }
-  
+
 textarea {
-    resize: none
-}
-  
-button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0
-}
-#root {
-    border: 1px solid black;
-
+  resize: none;
 }
 
-.card {
-    width: -webkit-fit-content;
-    height: 60px;
-    background: linear-gradient(90deg, rgba(243,226,220,1) 0%, rgba(243,226,220,1) 48%, rgba(217,170,105,1) 52%, rgba(217,170,105,1) 100%);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-    margin: 10px;
-    padding-right: 5px;
+button,
+input,
+textarea,
+select {
+  -moz-appearance: none !important;
+       appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
+
+/* #root {
+    display: grid;
+    gap: 10px;
+
     
+    height: 100vh;
 
-    border-radius: 20px 0;
-    box-shadow: 2px 2px 5px black;
+    @media screen and (max-width: 300px) {
+        grid-template-columns: auto;
+    }
+
+    @media screen and (min-width: 301px) and (max-width: 600px) {
+        grid-template-columns: auto auto;
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 900px) {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    @media screen and (min-width: 901px) and (max-width: 1200px) {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    @media screen and (max-width: 1201px) {
+        grid-template-columns: repeat(4, auto);
+    }
+    div {
+        padding: 10px;
+        font-size: 20px;
+        background-color: #14141d;
+        border: 2px solid yellow;
+    }
+} */
+.card {
+  width: -webkit-fit-content;
+  height: 60px;
+  background: -webkit-gradient(linear, left top, right top, from(#f3e2dc), color-stop(48%, #f3e2dc), color-stop(52%, #d9aa69), to(#d9aa69));
+  background: linear-gradient(90deg, #f3e2dc 0%, #f3e2dc 48%, #d9aa69 52%, #d9aa69 100%);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  margin: 10px;
+  padding-right: 5px;
+  border-radius: 20px 0;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card3 {
-    width: -webkit-fit-content;
-    height: 60px;
-    background: linear-gradient(90deg, rgb(194, 231, 185) 0%, rgba(243,226,220,1) 48%, rgb(16, 163, 41) 52%, rgb(6, 99, 13) 100%);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-    margin: 10px;
-    padding-right: 5px;
-    
-
-    border-radius: 20px 0;
-    box-shadow: 2px 2px 5px black;
+  width: -webkit-fit-content;
+  height: 60px;
+  background: -webkit-gradient(linear, left top, right top, from(#c2e7b9), color-stop(48%, #f3e2dc), color-stop(52%, #10a329), to(#06630d));
+  background: linear-gradient(90deg, #c2e7b9 0%, #f3e2dc 48%, #10a329 52%, #06630d 100%);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  margin: 10px;
+  padding-right: 5px;
+  border-radius: 20px 0;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 
-input, button {
-    width: 50px;
-    height: 25px;
-    margin-left: 5px;
-    
-    border: 1px solid black;
-    border-radius: 10px;
-    text-align: center;
+input,
+button {
+  width: 50px;
+  height: 25px;
+  margin-left: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
 }
 
 input:hover {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 input:focus {
-    padding: 10px;
-    border: 2px solid rgb(48, 107, 184)
+  padding: 10px;
+  border: 2px solid #306bb8;
 }
 
 button {
-    background-color: rgb(49, 173, 55);
-    font-weight: 800;
+  background-color: #31ad37;
+  font-weight: 800;
 }
 
 button:hover {
-    background-color: rgb(21, 141, 141);
-    color: white;
+  background-color: #158d8d;
+  color: white;
 }
 
 button:active {
-    color: white;
+  color: white;
 }
 
 div.msg {
-    background-color: red;
-    color: white;
-    font-size: 0.8em;
+  background-color: red;
+  color: white;
+  font-size: 0.8em;
 }
+/*# sourceMappingURL=homeWork.css.map */

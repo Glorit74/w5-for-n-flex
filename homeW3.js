@@ -10,7 +10,7 @@ function loadEvent() {
         <button type="button">Click</button>
     </div><br>
     <div class="msg"></div>`
-    root.insertAdjacentHTML("beforeend", input);
+    root.insertAdjacentHTML("afterbegin", input);
     
     button = document.querySelector("button");
         
@@ -37,7 +37,7 @@ function loadEvent() {
                 endNumber += `<div class="card3">${zeroNumber}</div>`
             }
             
-            root.insertAdjacentHTML("beforeend", endNumber);     
+            root.insertAdjacentHTML("beforeend", `<div class='container'> ${endNumber} </div>`);     
         };
     }
 }
